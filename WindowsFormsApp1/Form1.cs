@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
         public static int[] colorTag = new int[64];
         public static int HowManyzero;
         string path3 = System.IO.Directory.GetCurrentDirectory() + @"\solver.exe";
+        string path4 = System.IO.Directory.GetCurrentDirectory() + @"\castle.png";
         FileStream fs;
         FileStream res;
         StreamWriter sw;
@@ -59,12 +60,13 @@ namespace WindowsFormsApp1
             if (sr != null)
             {
                 sr.Close();
-                File.Delete("testdata.out");
+                
             }
             sw.Close();
             fs.Close();
             File.Delete("solver.exe");
             File.Delete("testdata.in");
+            File.Delete("testdata.out");
         }
 
         Button[] Btn = new Button[64];
@@ -77,7 +79,7 @@ namespace WindowsFormsApp1
                     int N = i * 8 + j;
                     Btn[N] = new Button()
                     {
-                        Height = 55,//每个格子高度 宽度均为70
+                        Height = 55,//每个格子高度 宽度均为55
                         Width = 55,//
                         Top =i * 60,//起始坐标
                         Left =j * 60
@@ -90,7 +92,7 @@ namespace WindowsFormsApp1
                     {
                         Button btn = (Button)sender;
                         int M = N;
-                        btn.BackgroundImage = Image.FromFile(@"C:\Users\yuhao\source\repos\WindowsFormsApp1\WindowsFormsApp1\Res\castle.png");
+                        btn.BackgroundImage = EastFlow.Properties.Resources.castle;
                         btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
                         switch (colorTag[M])
                         {
