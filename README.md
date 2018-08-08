@@ -4,4 +4,5 @@ release里的exe文件均已嵌入所需的dll，下载即可使用。
 欢迎debug
 
 ![avatar](https://github.com/eddy20001118/EastFlow/blob/master/ScreenShot2.PNG)
-![avatar](https://github.com/eddy20001118/EastFlow/blob/master/ScreenShot1.PNG)
+
+![avatar](https://github.com/eddy20001118/EastFlow/blob/master/ScrennShot1.PNG)
