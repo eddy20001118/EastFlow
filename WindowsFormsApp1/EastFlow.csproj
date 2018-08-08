@@ -128,7 +128,6 @@
     <Content Include="East Flow.ico" />
     <None Include="Resources\castle.png" />
     <None Include="Resources\Image1.bmp" />
-    <None Include="Res\castle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
